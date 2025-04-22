@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Lorem Ipsum Generator</h1>
+        <form action="#">
+            <label for="sug1">Paragraph</label>
+            <label for="sug1" id="numPar"></label>
+            <input type="range" name="paragraph" id="sug1" min="1" max="100" value="1" step="1">
+            <label for="sug2">Words per Paragraph</label>
+            <label for="sug2" id="numWord"></label>
+            <input type="range" name="word" id="sug2" min="1" max="100" value="1" step="1">
+            <label for="selectTag"> Select Tag </label>
+            <select name="tag" id="tags"></select>
+            <label for="selectTag"> Include HTML </label>
+            <select name="html" id="insertHtml">
+                <option>yes</option>
+                <option>no</option>
+            </select>            
+            <button type="submit" id="generate">Generate lorem ipsum code </button>
+            <textarea name="textarea" id="textarea"></textarea>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

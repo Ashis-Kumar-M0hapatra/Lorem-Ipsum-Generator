@@ -1,0 +1,99 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left top, antiquewhite, #feb47b);
+}
+#container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 85vh;
+    width: 30vw;
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+}
+#container h1 {
+    position: absolute;
+    top: 2%;
+    font-size: 2vw;
+    font-weight: 900;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: 'algerian', sans-serif;
+    color: #333;
+}
+form{
+    margin-top: 10%;
+    height: 85%;
+    width: 90%;
+    overflow: hidden;
+    border: 1px solid #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    gap: 10px;
+}
+label{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#sug1, #sug2{
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+}
+select{
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 2px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#generate{
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5vw;
+    cursor: pointer;
+    background: linear-gradient(to top right, antiquewhite, #feb47b);
+    border: none;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+#generate:hover{
+    background: linear-gradient(to bottom left, antiquewhite, #feb47b);
+}
+#generate:active{
+    background: linear-gradient(to bottom left, #feb47b, antiquewhite);
+    transform: translate(3px, 3px);
+}
+#textarea{
+    width: 100%;
+    height: 40%;
+    padding: 5px;
+    font-size: 1vw;
+    font-family: 'sans-serif', monospace;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    resize: none;
+}
+
+#numPar, #numWord {
+    opacity: 0;
+    color: #333;
+    font-size: 1vw;
+    transition: opacity 0.3s ease;
+}
